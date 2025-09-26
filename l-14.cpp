@@ -40,7 +40,7 @@ void print(Color);
 
 int main()
 {
-    // Color objects r,g,b (0,0,0)
+    // Color objects (7 total)
 
     cout << endl << "----------------------------";
     cout << endl << "Red:" << endl;
@@ -80,8 +80,38 @@ int main()
     y.setG(255);
     y.setB(0);
     y.print();
-    print(y); // Prints yellow
-    
+    print(y); //Prints yellow
+
+    cout << "----------------------------";
+    cout << endl << "Magenta" << endl;
+    cout << "----------------------------" << endl;
+    Color m;
+    m.setR(255);
+    m.setG(0);
+    m.setB(255);
+    m.print();
+    print(m); //Prints magenta
+
+    cout << "----------------------------";
+    cout << endl << "Cyan" << endl;
+    cout << "----------------------------" << endl;
+    Color c;
+    c.setR(0);
+    c.setG(255);
+    c.setB(255);
+    c.print();
+    print(c); //Prints cyan
+
+    cout << "----------------------------";
+    cout << endl << "White" << endl;
+    cout << "----------------------------" << endl;
+    Color w;
+    w.setR(255);
+    w.setG(255);
+    w.setB(255);
+    w.print();
+    print(w); //Prints white
+
     cout << endl;
 	return 0;
 }
