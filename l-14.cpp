@@ -40,13 +40,30 @@ int main()
 {
     // Color objects r,g,b (0,0,0)
     Color r;
+    r.setR(255);
+    r.setG(0);
+    r.setB(0);
+    r.print();
+    print(r); //Prints red
 
     Color g;
+    g.setR(0);
+    g.setG(255);
+    g.setB(0);
+    g.print();
+    print(g); //Prints green
+
     Color b;
+    b.setR(0);
+    b.setG(0);
+    b.setB(255);
+    b.print();
+    print(b); //Prints blue
     
 	return 0;
 }
 
+// Prints out the colors
 void print(Color c)
 {
     cout << c.getRed() << c.getGreen() << c.getGreen();
