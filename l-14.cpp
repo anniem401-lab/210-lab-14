@@ -39,6 +39,9 @@ void print(Color);
 int main()
 {
     // Color objects r,g,b (0,0,0)
+    cout << endl << endl;
+
+    cout << "Color red:" << endl;
     Color r;
     r.setR(255);
     r.setG(0);
@@ -46,6 +49,7 @@ int main()
     r.print();
     print(r); //Prints red
 
+    cout << endl << "Color green:" << endl;
     Color g;
     g.setR(0);
     g.setG(255);
@@ -53,6 +57,7 @@ int main()
     g.print();
     print(g); //Prints green
 
+    cout << endl << "Color blue:" << endl;
     Color b;
     b.setR(0);
     b.setG(0);
@@ -60,11 +65,14 @@ int main()
     b.print();
     print(b); //Prints blue
     
+    cout << endl;
 	return 0;
 }
 
-// Prints out the colors
+// Prints out the colors in r,g,b (0,0,0) format
 void print(Color c)
 {
-    cout << c.getRed() << c.getGreen() << c.getGreen();
+    cout << endl << "   R,G,B" << endl;
+    cout << "(" << c.getRed() << ", " <<c.getGreen() << ", " << c.getBlue() << ")";
+    cout << endl << endl;
 }
