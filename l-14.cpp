@@ -39,17 +39,20 @@ void print(Color);
 int main()
 {
     // Color objects r,g,b (0,0,0)
-    cout << endl << endl;
 
-    cout << "Color red:" << endl;
+    cout << endl << "----------------------------";
+    cout << endl << "Color red:" << endl;
+    cout << "----------------------------" << endl;
     Color r;
     r.setR(255);
     r.setG(0);
     r.setB(0);
     r.print();
     print(r); //Prints red
-
+    
+    cout << "----------------------------";
     cout << endl << "Color green:" << endl;
+    cout << "----------------------------" << endl;
     Color g;
     g.setR(0);
     g.setG(255);
@@ -57,7 +60,9 @@ int main()
     g.print();
     print(g); //Prints green
 
+    cout << "----------------------------";
     cout << endl << "Color blue:" << endl;
+    cout << "----------------------------" << endl;
     Color b;
     b.setR(0);
     b.setG(0);
